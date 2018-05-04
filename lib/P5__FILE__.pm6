@@ -1,20 +1,41 @@
 use v6.c;
 unit module P5__FILE__:ver<0.0.1>:auth<cpan:ELIZABETH>;
 
-sub term:<__PACKAGE__>() is export {
-    callframe(1).code.package.^name
+my sub calling_routine() {
+    my $n = 1;
+    while callframe(++$n).code -> $code {
+        return $code if $code ~~ Routine;
+    }
+    Nil
 }
-sub term:<__FILE__>() is export {
+
+my sub term:<__PACKAGE__>() is export {
+    my $n = 0;
+    while callframe(++$n) -> $frame {
+        if $frame.my<$?PACKAGE>:exists {
+            my $name = $frame.my<$?PACKAGE>.^name;
+            return $name eq 'GLOBAL' ?? 'main' !! $name;
+        }
+        elsif $frame.code -> $code {
+            return $code.package.^name if $code ~~ Routine;
+        }
+        else {
+            return 'main';
+        }
+    }
+}
+my sub term:<__FILE__>() is export {
     callframe(1).file
 }
-sub term:<__LINE__>() is export {
+my sub term:<__LINE__>() is export {
     callframe(1).line
 }
-sub term:<__SUB__>() is export {
-    my int $n = 1;
-    my $code;
-    ++$n until ($code := callframe($n).code) ~~ Routine;
-    $code.name
+my sub term:<__SUB__>() is export {
+    my $n = 0;
+    while callframe(++$n).code -> $code {
+        return $code.name if $code ~~ Routine;
+    }
+    Nil
 }
 
 =begin pod
