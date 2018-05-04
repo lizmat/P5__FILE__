@@ -1,13 +1,5 @@
 use v6.c;
-unit module P5__FILE__:ver<0.0.1>:auth<cpan:ELIZABETH>;
-
-my sub calling_routine() {
-    my $n = 1;
-    while callframe(++$n).code -> $code {
-        return $code if $code ~~ Routine;
-    }
-    Nil
-}
+unit module P5__FILE__:ver<0.0.2>:auth<cpan:ELIZABETH>;
 
 my sub term:<__PACKAGE__>() is export {
     my $n = 0;
