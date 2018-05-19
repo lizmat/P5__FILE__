@@ -43,7 +43,7 @@ P5__FILE__ - Implement Perl 5's __FILE__ and associated functionality
 =head1 DESCRIPTION
 
 This module tries to mimic the behaviour of C<__FILE__>, C<__LINE__>,
-C<__PACKAGE__> and C<__SUB__> in Perl 5 as closely as possible.
+C<__PACKAGE__> and C<__SUB__> functionality of Perl 5 as closely as possible.
 
 =head1 TERMS
 
