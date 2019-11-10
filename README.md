@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/lizmat/P5__FILE__.svg?branch=master)](https://travis-ci.org/lizmat/P5__FILE__)
-
 NAME
 ====
 
-P5__FILE__ - Implement Perl 5's __FILE__ and associated functionality
+P5__FILE__ - Implement Perl's __FILE__ and associated functionality
 
 SYNOPSIS
 ========
@@ -13,7 +11,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of `__FILE__`, `__LINE__`, `__PACKAGE__` and `__SUB__` in Perl 5 as closely as possible.
+This module tries to mimic the behaviour of `__FILE__`, `__LINE__`, `__PACKAGE__` and `__SUB__` functionality of Perl as closely as possible.
 
 TERMS
 =====
@@ -23,7 +21,7 @@ __PACKAGE__
 
 A special token that returns the name of the package in which it occurs.
 
-### Perl 6 
+### Raku
 
     $?PACKAGE.^name
 
@@ -34,7 +32,7 @@ __FILE__
 
 A special token that returns the name of the file in which it occurs.
 
-### Perl 6 
+### Raku
 
     $?FILE
 
@@ -43,7 +41,7 @@ __LINE__
 
 A special token that compiles to the current line number.
 
-### Perl 6 
+### Raku
 
     $?LINE
 
@@ -52,7 +50,7 @@ __SUB__
 
 A special token that returns a reference to the current subroutine, or "undef" outside of a subroutine.
 
-### Perl 6
+### Raku
 
     &?ROUTINE
 
@@ -68,9 +66,9 @@ Source can be located at: https://github.com/lizmat/P5__FILE__ . Comments and Pu
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

@@ -2,6 +2,9 @@ Revision history for P5__FILE__
 
 {{$NEXT}}
 
+0.0.3  2019-11-10T13:44:20+01:00
+    - changed Perl 6 to Raku, and Perl 5 to Perl
+
 0.0.2  2018-05-04T21:28:40+02:00
     - remove no longer needed helper sub
 

@@ -1,5 +1,5 @@
 use v6.c;
-unit module P5__FILE__:ver<0.0.2>:auth<cpan:ELIZABETH>;
+unit module P5__FILE__:ver<0.0.3>:auth<cpan:ELIZABETH>;
 
 my sub term:<__PACKAGE__>() is export {
     my $n = 0;
@@ -34,7 +34,7 @@ my sub term:<__SUB__>() is export {
 
 =head1 NAME
 
-P5__FILE__ - Implement Perl 5's __FILE__ and associated functionality
+P5__FILE__ - Implement Perl's __FILE__ and associated functionality
 
 =head1 SYNOPSIS
 
@@ -43,7 +43,7 @@ P5__FILE__ - Implement Perl 5's __FILE__ and associated functionality
 =head1 DESCRIPTION
 
 This module tries to mimic the behaviour of C<__FILE__>, C<__LINE__>,
-C<__PACKAGE__> and C<__SUB__> functionality of Perl 5 as closely as possible.
+C<__PACKAGE__> and C<__SUB__> functionality of Perl as closely as possible.
 
 =head1 TERMS
 
@@ -51,7 +51,7 @@ C<__PACKAGE__> and C<__SUB__> functionality of Perl 5 as closely as possible.
 
 A special token that returns the name of the package in which it occurs.
 
-=head3 Perl 6 
+=head3 Raku
 
     $?PACKAGE.^name
 
@@ -63,7 +63,7 @@ string with the name of the package.
 
 A special token that returns the name of the file in which it occurs.
 
-=head3 Perl 6 
+=head3 Raku
 
     $?FILE
 
@@ -71,7 +71,7 @@ A special token that returns the name of the file in which it occurs.
 
 A special token that compiles to the current line number.
 
-=head3 Perl 6 
+=head3 Raku
 
     $?LINE
 
@@ -80,7 +80,7 @@ A special token that compiles to the current line number.
 A special token that returns a reference to the current subroutine, or
 "undef" outside of a subroutine.
 
-=head3 Perl 6
+=head3 Raku
 
     &?ROUTINE
 
@@ -97,9 +97,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
