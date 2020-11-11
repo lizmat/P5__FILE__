@@ -1,7 +1,7 @@
 NAME
 ====
 
-P5__FILE__ - Implement Perl's __FILE__ and associated functionality
+Raku port of Perl's __FILE__ and associated functionality
 
 SYNOPSIS
 ========
@@ -11,7 +11,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of `__FILE__`, `__LINE__`, `__PACKAGE__` and `__SUB__` functionality of Perl as closely as possible.
+This module tries to mimic the behaviour of Perl's `__FILE__`, `__LINE__`, `__PACKAGE__` and `__SUB__` functionality as closely as possible in Raku.
 
 TERMS
 =====
@@ -66,7 +66,7 @@ Source can be located at: https://github.com/lizmat/P5__FILE__ . Comments and Pu
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

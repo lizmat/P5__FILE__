@@ -1,5 +1,5 @@
-use v6.c;
-unit module P5__FILE__:ver<0.0.3>:auth<cpan:ELIZABETH>;
+use v6.*;
+unit module P5__FILE__:ver<0.0.4>:auth<cpan:ELIZABETH>;
 
 my sub term:<__PACKAGE__>() is export {
     my $n = 0;
@@ -34,7 +34,7 @@ my sub term:<__SUB__>() is export {
 
 =head1 NAME
 
-P5__FILE__ - Implement Perl's __FILE__ and associated functionality
+Raku port of Perl's __FILE__ and associated functionality
 
 =head1 SYNOPSIS
 
@@ -42,8 +42,8 @@ P5__FILE__ - Implement Perl's __FILE__ and associated functionality
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of C<__FILE__>, C<__LINE__>,
-C<__PACKAGE__> and C<__SUB__> functionality of Perl as closely as possible.
+This module tries to mimic the behaviour of Perl's C<__FILE__>, C<__LINE__>,
+C<__PACKAGE__> and C<__SUB__> functionality as closely as possible in Raku.
 
 =head1 TERMS
 
@@ -97,7 +97,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
