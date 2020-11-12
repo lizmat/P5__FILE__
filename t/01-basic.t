@@ -21,4 +21,4 @@ ok defined(::('&term:<__SUB__>')),
 ok !defined(P5__FILE__::{'&term:<__SUB__>'}),
   '__SUB__ externally NOT accessible?';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

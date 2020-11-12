@@ -7,7 +7,7 @@
   ],
   "depends": [
   ],
-  "description": "Implement Perl's __FILE__ and associated functionality",
+  "description": "Raku port of Perl's __FILE__ and associated functionality",
   "license": "Artistic-2.0",
   "name": "P5__FILE__",
   "perl": "6.c",
@@ -23,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.4"
+  "version": "0.0.5"
 }

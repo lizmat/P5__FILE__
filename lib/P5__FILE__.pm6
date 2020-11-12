@@ -1,5 +1,5 @@
 use v6.*;
-unit module P5__FILE__:ver<0.0.4>:auth<cpan:ELIZABETH>;
+unit module P5__FILE__:ver<0.0.5>:auth<cpan:ELIZABETH>;
 
 my sub term:<__PACKAGE__>() is export {
     my $n = 0;
@@ -104,3 +104,5 @@ Re-imagined from Perl as part of the CPAN Butterfly Plan.
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
 =end pod
+
+# vim: expandtab shiftwidth=4
