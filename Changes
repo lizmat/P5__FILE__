@@ -2,6 +2,12 @@ Revision history for P5__FILE__
 
 {{$NEXT}}
 
+0.0.6  2021-09-09T18:03:31+02:00
+    - Change file extension to .rakumod
+    - Migrate to zef ecosystem
+    - Update email address
+    - Update copyright year
+
 0.0.5  2020-11-12T12:39:18+01:00
     - Change name of distribution in META info
 

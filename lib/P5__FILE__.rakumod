@@ -1,5 +1,5 @@
 use v6.*;
-unit module P5__FILE__:ver<0.0.5>:auth<cpan:ELIZABETH>;
+unit module P5__FILE__:ver<0.0.6>:auth<zef:lizmat>;
 
 my sub term:<__PACKAGE__>() is export {
     my $n = 0;
@@ -90,14 +90,14 @@ string with the name of the subroutine.
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/P5__FILE__ . Comments and
 Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
